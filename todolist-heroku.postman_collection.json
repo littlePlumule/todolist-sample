@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "82fb33fd-078d-4e29-8eb5-c1211f50f1e4",
+		"name": "todolist-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://nameless-atoll-17835.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"nameless-atoll-17835",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"HI 今天過的好嗎\"\r\n}"
+				},
+				"url": {
+					"raw": "https://nameless-atoll-17835.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"nameless-atoll-17835",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有todos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://nameless-atoll-17835.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"nameless-atoll-17835",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://nameless-atoll-17835.herokuapp.com/todos/c3c013d0-baad-47aa-9499-9b722ebde9c4",
+					"protocol": "https",
+					"host": [
+						"nameless-atoll-17835",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"c3c013d0-baad-47aa-9499-9b722ebde9c4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改單筆todo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"hooooo\"\r\n}"
+				},
+				"url": {
+					"raw": "https://nameless-atoll-17835.herokuapp.com/todos/c3c013d0-baad-47aa-9499-9b722ebde9c4",
+					"protocol": "https",
+					"host": [
+						"nameless-atoll-17835",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"c3c013d0-baad-47aa-9499-9b722ebde9c4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
